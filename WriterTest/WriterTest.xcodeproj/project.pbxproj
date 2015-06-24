@@ -15,6 +15,7 @@
 		DA02C26B1B35E8F900964BF0 /* WriterTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C26A1B35E8F900964BF0 /* WriterTestTests.swift */; };
 		DA02C27B1B35F32800964BF0 /* WriterTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C27A1B35F32800964BF0 /* WriterTestViewController.swift */; };
 		DA02C27D1B35F3ED00964BF0 /* WriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C27C1B35F3ED00964BF0 /* WriterView.swift */; };
+		DAFBCD261B3AF2A100AD548D /* Inconsolata.otf in Resources */ = {isa = PBXBuildFile; fileRef = DAFBCD251B3AF2A100AD548D /* Inconsolata.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		DA02C26A1B35E8F900964BF0 /* WriterTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterTestTests.swift; sourceTree = "<group>"; };
 		DA02C27A1B35F32800964BF0 /* WriterTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterTestViewController.swift; sourceTree = "<group>"; };
 		DA02C27C1B35F3ED00964BF0 /* WriterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterView.swift; sourceTree = "<group>"; };
+		DAFBCD251B3AF2A100AD548D /* Inconsolata.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inconsolata.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				DA02C27A1B35F32800964BF0 /* WriterTestViewController.swift */,
 				DA02C27C1B35F3ED00964BF0 /* WriterView.swift */,
 				DA02C2581B35E8F900964BF0 /* Main.storyboard */,
+				DAFBCD251B3AF2A100AD548D /* Inconsolata.otf */,
 				DA02C24F1B35E8F900964BF0 /* Supporting Files */,
 			);
 			path = WriterTest;
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA02C25A1B35E8F900964BF0 /* Main.storyboard in Resources */,
+				DAFBCD261B3AF2A100AD548D /* Inconsolata.otf in Resources */,
 				DA02C25F1B35E8F900964BF0 /* LaunchScreen.xib in Resources */,
 				DA02C25C1B35E8F900964BF0 /* Images.xcassets in Resources */,
 			);

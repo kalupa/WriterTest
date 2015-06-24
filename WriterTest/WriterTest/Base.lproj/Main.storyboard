@@ -2,7 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Inconsolata.otf">
+            <string>Inconsolata</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Writer Test View Controller-->
         <scene sceneID="jIo-B7-EEK">
@@ -16,38 +22,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P3T-wa-kOg" customClass="WriterView" customModule="WriterTest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42H-mR-6hK">
-                                        <rect key="frame" x="0.0" y="20" width="600" height="560"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
+                            <textView multipleTouchEnabled="YES" contentMode="center" text="Enter Text" translatesAutoresizingMaskIntoConstraints="NO" id="k3Z-iZ-p3y">
+                                <rect key="frame" x="16" y="28" width="568" height="552"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="42H-mR-6hK" secondAttribute="trailing" id="9Ol-pJ-0Yv"/>
-                                    <constraint firstItem="42H-mR-6hK" firstAttribute="top" secondItem="P3T-wa-kOg" secondAttribute="top" constant="20" id="fpr-Tx-a5X"/>
-                                    <constraint firstItem="42H-mR-6hK" firstAttribute="leading" secondItem="P3T-wa-kOg" secondAttribute="leading" id="s5I-O2-no9"/>
-                                    <constraint firstAttribute="bottom" secondItem="42H-mR-6hK" secondAttribute="bottom" constant="20" symbolic="YES" id="vFC-7V-yHm"/>
-                                </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="Inconsolata" family="Inconsolata" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P3T-wa-kOg" firstAttribute="leading" secondItem="isk-gN-NcZ" secondAttribute="leading" id="NeS-uq-960"/>
-                            <constraint firstItem="P3T-wa-kOg" firstAttribute="top" secondItem="isk-gN-NcZ" secondAttribute="top" id="S5e-yQ-lg6"/>
-                            <constraint firstAttribute="trailing" secondItem="P3T-wa-kOg" secondAttribute="trailing" id="hEh-LA-ESv"/>
-                            <constraint firstItem="P3T-wa-kOg" firstAttribute="bottom" secondItem="t4U-ac-mF6" secondAttribute="top" id="iPj-iy-0Bl"/>
+                            <constraint firstItem="k3Z-iZ-p3y" firstAttribute="top" secondItem="CLM-YD-P57" secondAttribute="bottom" constant="8" symbolic="YES" id="AcA-RG-tcG"/>
+                            <constraint firstItem="k3Z-iZ-p3y" firstAttribute="trailing" secondItem="isk-gN-NcZ" secondAttribute="trailingMargin" id="nqR-C8-4jA"/>
+                            <constraint firstAttribute="bottom" secondItem="k3Z-iZ-p3y" secondAttribute="bottom" constant="20" symbolic="YES" id="sUM-sc-eZC"/>
+                            <constraint firstItem="k3Z-iZ-p3y" firstAttribute="leading" secondItem="isk-gN-NcZ" secondAttribute="leadingMargin" id="zHe-qV-6tm"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="ContainerView" destination="P3T-wa-kOg" id="KhR-82-DZW"/>
-                        <outlet property="TextInputThing" destination="42H-mR-6hK" id="b6W-Li-Xz7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNU-gb-Cd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
