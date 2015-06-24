@@ -14,6 +14,7 @@
 		DA02C25F1B35E8F900964BF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA02C25D1B35E8F900964BF0 /* LaunchScreen.xib */; };
 		DA02C26B1B35E8F900964BF0 /* WriterTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C26A1B35E8F900964BF0 /* WriterTestTests.swift */; };
 		DA02C27B1B35F32800964BF0 /* WriterTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C27A1B35F32800964BF0 /* WriterTestViewController.swift */; };
+		DA02C27D1B35F3ED00964BF0 /* WriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C27C1B35F3ED00964BF0 /* WriterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		DA02C2691B35E8F900964BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA02C26A1B35E8F900964BF0 /* WriterTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterTestTests.swift; sourceTree = "<group>"; };
 		DA02C27A1B35F32800964BF0 /* WriterTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterTestViewController.swift; sourceTree = "<group>"; };
+		DA02C27C1B35F3ED00964BF0 /* WriterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				DA02C27A1B35F32800964BF0 /* WriterTestViewController.swift */,
+				DA02C27C1B35F3ED00964BF0 /* WriterView.swift */,
 				DA02C2581B35E8F900964BF0 /* Main.storyboard */,
 				DA02C24F1B35E8F900964BF0 /* Supporting Files */,
 			);
@@ -164,6 +167,7 @@
 				TargetAttributes = {
 					DA02C24B1B35E8F900964BF0 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 6Q2JF3M7VA;
 					};
 					DA02C2631B35E8F900964BF0 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -218,6 +222,7 @@
 				DA02C27B1B35F32800964BF0 /* WriterTestViewController.swift in Sources */,
 				DA02C2551B35E8F900964BF0 /* WriterTest.xcdatamodeld in Sources */,
 				DA02C2521B35E8F900964BF0 /* AppDelegate.swift in Sources */,
+				DA02C27D1B35F3ED00964BF0 /* WriterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WriterTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -356,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WriterTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

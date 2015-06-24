@@ -10,5 +10,7 @@ import UIKit
 
 class WriterTestViewController: UIViewController {
 
+	@IBOutlet weak var TextInputThing: UITextView!
+	
 
 }
